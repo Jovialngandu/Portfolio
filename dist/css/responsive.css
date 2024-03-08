@@ -1,0 +1,146 @@
+@media screen and (min-width:830px) and (max-width:1200px)
+{
+    .about__description > div:nth-child(2)
+    {
+        display: block;
+    }
+    .true__aboutme
+    {
+        width: 100%;
+    }
+    .true__aboutme
+    {
+        margin-top:20px;
+        padding-bottom:5%;
+        text-align:center;
+        width: 100%;
+    }
+    .container__about 
+    {  
+       /*margin-left:12%; width: 80%;*/
+       padding-left:45px;
+       padding-right:45px;
+       
+    }
+    .container__skills {
+        margin-top:20px;
+        padding-bottom: 20%;
+        text-align:center;
+        width: 100%;
+      }
+      .subtiitle {
+        display:none;
+     
+      }
+      
+      
+   
+    *
+    {
+        font-size: 17px;
+    }
+
+}
+@media only screen and (max-width:829px)
+{
+    .about__description > div:nth-child(2)
+    {
+        display: block;
+    }
+    .true__aboutme
+    {
+        width: 100%;
+    }
+    .true__aboutme
+    {
+        margin-top:20px;
+        padding-bottom:5%;
+        text-align:center;
+        width: 100%;
+    }
+    .container__about 
+    {  
+       /*margin-left:12%; width: 80%;*/
+       padding-left:30px;
+       padding-right:30px;
+       
+    }
+    .container__skills {
+        margin-top:15px;
+        padding-bottom:17%;
+        text-align:center;
+        width: 100%;
+      }
+      .subtiitle {
+        display:none;
+     
+      }
+      .project__all1
+      {
+          display: block;
+      }
+      .container__complete
+      {
+          display:block;
+          padding-left:0%;
+      }
+      .project__item
+      {
+          width: 100%;
+      }
+      footer {
+        display:block;
+        text-align: center;
+
+        
+      }
+      body > footer:nth-child(2) > div:nth-child(1)
+      {
+          display: block;
+          text-align: center;
+      }
+      .finaldesc {
+        width: 100%;
+        font-size: x-small;
+        color: rgb(125, 125, 125);
+      }
+      .project__number
+      {
+     
+      padding-left: 30%;
+      padding-right: 30%;
+      font-size: xx-large;
+     
+      
+      
+      }
+      .about__title, .container__project > h1, .container__contact > h1 {
+        font-size: 40px;
+        font-weight: bolder;
+        margin-bottom: 35px;
+        text-align: center;
+        margin-top: 50PX;
+      }
+      *{
+          font-size: 13px;
+      }
+     
+
+}/**/
+@media only screen and (max-width:500px)
+{
+    .mynav
+    {
+        display: none;
+    }
+    .btn__menu
+    {
+        display: block;
+        
+    }
+    .container
+    {
+        /*margin-right: -241px;*/
+        overflow-X:hidden ;
+    }
+}
