@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Jovial Ngandu</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #f8fafc; }
+        .chart-container { position: relative; width: 100%; max-width: 800px; margin: auto; height: 450px; }
+        @media (min-width: 768px) { .chart-container { height: 500px; } }
+        .section-fade-in { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+        .section-fade-in.visible { opacity: 1; transform: translateY(0); }
+    </style>
+</head>
+<body class="text-slate-700">
+
+    <nav class="bg-white/80 backdrop-blur-md sticky top-0 z-50 shadow-sm">
+        <div class="max-w-6xl mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <span class="text-xl font-bold text-teal-600">Jovial Ngandu</span>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#profil" class="text-slate-600 hover:text-teal-600 transition-colors">Profil</a>
+                    <a href="#competences" class="text-slate-600 hover:text-teal-600 transition-colors">Compétences</a>
+                    <a href="#experiences" class="text-slate-600 hover:text-teal-600 transition-colors">Expériences</a>
+                    <a href="#formation" class="text-slate-600 hover:text-teal-600 transition-colors">Formation</a>
+                    <a href="#projets" class="text-slate-600 hover:text-teal-600 transition-colors">Projets</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="max-w-6xl mx-auto p-4 md:p-8">
+        
+        <header id="accueil" class="text-center my-12 md:my-20 section-fade-in">
+            <div class="w-32 h-32 md:w-40 md:h-40 mx-auto mb-6">
+                <img src="images/portrait.png" alt="Jovial Ngandu" class="rounded-full shadow-lg object-cover w-full h-full">
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-slate-800">JOVIAL NGANDU</h1>
+            <p class="text-xl md:text-2xl text-teal-600 mt-2">Développeur Backend / Machine-Learning Engineer</p>
+            <div class="flex flex-col md:flex-row justify-center flex-wrap gap-x-6 gap-y-2 mt-6 text-slate-600">
+                <span class="flex items-center"><span class="mr-2">✉️</span> jovialngandu2@gmail.com</span>
+                <span class="flex items-center"><span class="mr-2">📞</span> +243 838 830 403</span>
+                <span class="flex items-center"><span class="mr-2">📍</span> Kinshasa, RDC</span>
+            </div>
+            <a href="https://www.linkedin.com/in/jovial-ngandu-7648422b0" target="_blank" class="mt-6 inline-block bg-teal-600 text-white font-semibold py-2 px-6 rounded-lg shadow-md hover:bg-teal-700 transition-all">Voir LinkedIn</a>
+            <a href="https://github.com/Jovialngandu" target="_blank" class="mt-4 inline-block bg-slate-800 text-white font-semibold py-2 px-6 rounded-lg shadow-md hover:bg-slate-900 transition-all">Voir GitHub</a>
+        </header>
+
+        <section id="profil" class="my-16 md:my-24 p-8 bg-white rounded-xl shadow-md section-fade-in">
+            <h2 class="text-3xl font-bold text-slate-800 mb-4">Profil Professionnel</h2>
+            <p class="text-lg leading-relaxed">
+                Développeur backend spécialisé dans la conception d’APIs, l’intégration front-end et la mise en œuvre de modèles ML dans des applications web et mobiles. Passionné par la création de solutions performantes et scalables répondant aux besoins complexes.
+            </p>
+        </section>
+
+        <section id="competences" class="my-16 md:my-24 section-fade-in">
+            <h2 class="text-3xl font-bold text-center text-slate-800 mb-4">Compétences Techniques</h2>
+            <p class="text-center text-lg max-w-3xl mx-auto mb-12">
+                Visualisation interactive de mes technologies clés.
+            </p>
+            <div class="bg-white p-4 sm:p-8 rounded-xl shadow-md">
+                <div class="chart-container">
+                    <canvas id="skillsChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiences" class="my-16 md:my-24 section-fade-in hidden">
+            <h2 class="text-3xl font-bold text-center text-slate-800 mb-12">Expériences & Projets</h2>
+            <div class="relative border-l-2 border-teal-200 ml-6 md:ml-0">
+                <div class="mb-12 pl-12 relative">
+                    <div class="absolute -left-[13px] top-1 w-6 h-6 bg-teal-600 rounded-full border-4 border-white"></div>
+                    <p class="text-sm font-medium text-teal-600">2023 - Actuel</p>
+                    <h3 class="text-xl font-bold text-slate-800 mt-1">Backend & Intégration ML</h3>
+                    <p class="text-md text-slate-600 mb-3">Projets personnels / Freelance | RDC</p>
+                    <ul class="list-disc list-inside text-slate-600 space-y-1">
+                        <li>Conception et développement d’APIs avec FastAPI, Django, Laravel.</li>
+                        <li>Intégration front-end et modèles ML dans des applications web et mobiles.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-12 pl-12 relative">
+                    <div class="absolute -left-[13px] top-1 w-6 h-6 bg-teal-600 rounded-full border-4 border-white"></div>
+                    <p class="text-sm font-medium text-teal-600">2023</p>
+                    <h3 class="text-xl font-bold text-slate-800 mt-1">Solola</h3>
+                    <p class="text-md text-slate-600 mb-3">Application mobile & store multiplateforme | RDC</p>
+                    <ul class="list-disc list-inside text-slate-600 space-y-1">
+                        <li>Création de l’application mobile Solola et store gratuit.</li>
+                        <li>Fonctionnalités hors-ligne et moteur de recommandation pour apps.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-12 pl-12 relative">
+                    <div class="absolute -left-[13px] top-1 w-6 h-6 bg-teal-600 rounded-full border-4 border-white"></div>
+                    <p class="text-sm font-medium text-teal-600">2023</p>
+                    <h3 class="text-xl font-bold text-slate-800 mt-1">API NSFW</h3>
+                    <p class="text-md text-slate-600 mb-3">Développement backend | RDC</p>
+                    <ul class="list-disc list-inside text-slate-600 space-y-1">
+                        <li>API pour détecter les contenus sensibles dans images et vidéos.</li>
+                        <li>Utilisation de FastAPI et intégration de modèles ML pour classification automatique.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-12 pl-12 relative">
+                    <div class="absolute -left-[13px] top-1 w-6 h-6 bg-teal-600 rounded-full border-4 border-white"></div>
+                    <p class="text-sm font-medium text-teal-600">2022</p>
+                    <h3 class="text-xl font-bold text-slate-800 mt-1">Projet IA Mobile</h3>
+                    <p class="text-md text-slate-600 mb-3">Stage universitaire | RDC</p>
+                    <ul class="list-disc list-inside text-slate-600 space-y-1">
+                        <li>Intégration de modèles OCR et détection de texte dans application mobile.</li>
+                        <li>Utilisation d’OpenCV (EAST, MSER) pour reconnaissance de caractères.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="grid md:grid-cols-2 gap-12 my-16 md:my-24">
+            <section id="formation" class="section-fade-in">
+                <h2 class="text-3xl font-bold text-slate-800 mb-6">Formation</h2>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <p class="text-lg font-bold text-teal-600">Université de Kinshasa</p>
+                    <p class="text-md font-semibold text-slate-700">3ᵉ année LMD, Sciences (Math-Info)</p>
+                    <p class="text-sm text-slate-500">Kinshasa, RDC</p>
+                </div>
+            </section>
+            
+            <section id="langues" class="section-fade-in">
+                <h2 class="text-3xl font-bold text-slate-800 mb-6">Langues</h2>
+                <div class="bg-white p-6 rounded-xl shadow-md space-y-4">
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-semibold">Français</span>
+                            <span class="text-sm text-slate-500">Courant</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-2.5">
+                            <div class="bg-teal-600 h-2.5 rounded-full" style="width: 78%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-semibold">Anglais</span>
+                            <span class="text-sm text-slate-500">Technique</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-2.5">
+                            <div class="bg-teal-600 h-2.5 rounded-full" style="width: 30%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-semibold">Lingala</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-2.5 ">
+                            <div class="bg-teal-600 h-2.5 rounded-full" style="width: 70%"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between mb-1">
+                            <span class="font-semibold">Swahili</span>
+                        </div>
+                        <div class="w-full bg-slate-200 rounded-full h-2.5">
+                            <div class="bg-teal-600 h-2.5 rounded-full" style="width: 50%"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <section id="projets" class="my-16 md:my-24 section-fade-in hidden">
+            <h2 class="text-3xl font-bold text-center text-slate-800 mb-4">Domaines d'Expertise</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all">
+                    <h3 class="text-lg font-bold text-teal-600 mb-2">APIs REST Sécurisées</h3>
+                    <p class="text-slate-600">Développement d'APIs robustes et sécurisées avec FastAPI, Django et Laravel.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all">
+                    <h3 class="text-lg font-bold text-teal-600 mb-2">Intégration Front-End</h3>
+                    <p class="text-slate-600">Intégration avec React, React Native et Electron.js pour applications web et mobiles.</p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all">
+                    <h3 class="text-lg font-bold text-teal-600 mb-2">Machine Learning</h3>
+                    <p class="text-slate-600">Intégration de modèles ML pour classification, OCR et détection de contenu NSFW.</p>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-800 text-white text-center p-6 mt-16">
+        <p>&copy; 2025 Jovial Ngandu. Conçu avec soin.</p>
+    </footer>
+
+    <script src="assets/js/main.js"> </script>
+</body>
+</html>
